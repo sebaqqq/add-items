@@ -1,51 +1,23 @@
-# React + TypeScript + Vite
+# Prueba Técnica de React - Lista de Elementos
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una aplicación básica de React que permite a los usuarios agregar y eliminar elementos de una lista. Es una prueba técnica que incluye el uso de formularios, manejo del estado de componentes, y renderizado dinámico de listas.
 
-Currently, two official plugins are available:
+## Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Añadir elementos a la lista.
+- Eliminar elementos de la lista.
+- Uso de `useState` para manejar el estado de la lista.
+- Interfaz amigable con un diseño moderno y minimalista.
 
-## Expanding the ESLint configuration
+## Tecnologías Utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **React**: Para la creación de la interfaz interactiva.
+- **CSS**: Para los estilos y la presentación de la aplicación.
+- **JavaScript (ES6+)**: Para la lógica de la aplicación.
 
-- Configure the top-level `parserOptions` property like this:
+## Requisitos Previos
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Asegúrate de tener instalado lo siguiente en tu sistema:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
-# add-items
+- Node.js (v14 o superior)
+- pnpm
